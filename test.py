@@ -1,13 +1,12 @@
-def binary_search(array, target):
-    sorted_array = sorted(array)
+def binary_search(arr, target):
+    sorted_array = sorted(arr)
     left_index = 0
     right_index = len(sorted_array) - 1
 
     while  left_index<= right_index:
-        # Find the middle index
+        
         middle_index = (left_index + right_index) // 2  
 
-        # Check if the target is at the middle
         if sorted_array[middle_index] == target:
             return middle_index
 
@@ -21,6 +20,6 @@ def binary_search(array, target):
     return -1
 
 array = [1, 4, 7, 11, 15]
-target = 11
-index = binary_search(array, target)
-print(f"Target {target} is at index: {index}")
+search = 11
+index = binary_search(array, search)
+print(f"Target {search} is at index: {index}")
