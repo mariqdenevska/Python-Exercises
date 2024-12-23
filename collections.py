@@ -1,4 +1,4 @@
-from collections import defaultdict
+#from collections import defaultdict
 
 ##Dict
 sammy = {'username':'sammy_shark', 'online':True, 'followers':987}
@@ -37,11 +37,11 @@ print('All but ends', a[1:7])
 print(a[::3])
 
 ##defaultdict
-def create_author_count_mapping(cookbooks: list[cookbook]):
-    counter = defaultdict(lambda: 0)
-    for coocbook in cookbooks:
-        counter[coocbook.author] +=1
-    return counter
+# def create_author_count_mapping(cookbooks: list[cookbook]):
+#     counter = defaultdict(lambda: 0)
+#     for coocbook in cookbooks:
+#         counter[coocbook.author] +=1
+#     return counter
 
 #Tuple
 weekdays_tuple =('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday')
